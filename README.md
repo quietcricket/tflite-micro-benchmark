@@ -6,7 +6,7 @@ To test out the performance and power consumption of some ARM based boards.
 ## SDK and Frameworks
 The machine learning framework uses Tensorflow Lite Micro. The RTOS system is Zephyr. 
 
-*My knowledge on RTOS is close to zero. Zephyr is chosen because it supports the most number of the boards intended to test.* 
+*My knowledge on RTOS is close to zero. Zephyr is chosen because it supports the most number of testing boards* 
 
 ## Setting up the dev environment on OSX
 Installation for Linux should be very similar. However, setting up the environment on windows can be challenging because the package installer `chocolatey` is not as great as OSX's `homebrew` or Linux's native `apt`.
