@@ -1,0 +1,1 @@
+west build -p always -b atsamd21_xpro tflite-micro-benchmark

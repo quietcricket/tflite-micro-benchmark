@@ -1,0 +1,1 @@
+"mcuboot":"/Users/vloh/Sites/tftest/bootloader/mcuboot":"/Users/vloh/Sites/tftest/bootloader/mcuboot/boot/zephyr/sysbuild"
