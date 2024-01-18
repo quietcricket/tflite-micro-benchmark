@@ -6,4 +6,4 @@ def convert(filename):
 	print(pixels)
 
 
-convert("0001.bmp")
+convert("0004.bmp")

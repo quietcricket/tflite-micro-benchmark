@@ -23,7 +23,7 @@ You can follow Zephyr getting started page to setup the environment. The key ste
 * Run setup.sh inside the Zephyr SDK folder to add the SDK to system path
 * OpenOCD was not installed for my OSX computer. To install it, use `brew install openocd` for OSX and `sudo apt install openocd` for Linux (a guess, never tested)
 * cd into Zephyr workspace `zephyr` folder
-* Run `west build -p always -b YOUR-BOARD-NAME samples/basic/blinky` to build the blinky example
+* Run `west build -b YOUR-BOARD-NAME samples/basic/blinky` to build the blinky example
 * Run `west flash` to upload the executable onto your board
 * If there are no errors in build and flash, the environment is read to use
 
