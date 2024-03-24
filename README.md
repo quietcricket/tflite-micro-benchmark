@@ -18,10 +18,13 @@ You can follow Zephyr getting started page to setup the environment. The key ste
 - Run `west flash` to upload the executable onto your board
 - If there are no errors in build and flash, the environment is read to use
 
-## Results
-|Board|ms per 1000 inferences|CPU|Frequency|
-|-|-|-|-|
-|Atmel SAMD21 XPLAINED PRO (atsamd21_xpro)		|535	|Cortex®-M0+	|48	|
-|nRF52840 DK (nrf52840dk_nrf52840)						|208	|Cortex-M4F		|32	|
-|STM32 Nucleo-144 (nucleo_f429zi)							|86		|Cortex®-M4		|180|
-|Atmel ATSAMV71-XULT (sam_v71_xult)						|28		|Cortex-M7		|300|	
+
+## Build and upload
+- west build -b `boardname` tflite-micro-benchmark: add `-p always` to clean and re-build if necessary
+- west flash
+
+## Board names
+- Atmel SAMD21 XPLAINED PRO: atsamd21_xpro
+- Atmel ATSAMV71-XULT: sam_v71_xult
+- nRF52840 DK: nrf52840dk_nrf52840
+- STM32 Nucleo-144: nucleo_f429zi
