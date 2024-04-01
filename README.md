@@ -1,6 +1,22 @@
-# Tensorflow Lite Micro Benchmark: Zephyr Boards
+# Tensorflow Lite Micro Benchmark 
 
-## Setting up the dev environment on OSX
+Some boards works with platformio and unfortunately Zephyr support in platformio is not working with tflite. So the codes are separated in two groups. The pure Zephyr based boards are located in this root folder. Boards using Arduino framework are located in `platformio-board` folder. 
+
+
+## Results
+
+| Board                                     | Framework | ms per 1000 inferences | CPU         | Frequency | Power |   |   |   |   |
+|-------------------------------------------|-----------|------------------------|-------------|-----------|-------|---|---|---|---|
+| Atmel SAMD21 XPLAINED PRO (atsamd21_xpro) | Zephyr    | 535                    | Cortex-M0+  | 48        | 0.69  |   |   |   |   |
+| nRF52840 DK (nrf52840dk_nrf52840)         | Zephyr    | 208                    | Cortex-M4F  | 64        | 0.13  |   |   |   |   |
+| STM32 Nucleo-144 (nucleo_f429zi)          | Arduino   | 88                     | Cortex-M4   | 180       | 0.79  |   |   |   |   |
+| Atmel ATSAMV71-XULT (sam_v71_xult)        | Zephyr    | 28                     | Cortex-M7   | 300       | 1.21  |   |   |   |   |
+| Raspberry Pi Pico                         | Arduino   | 167                    | Cortex-M0+  | 133       | 0.13  |   |   |   |   |
+| ESP32-S                                   | Arduino   | 86                     | Xtensa® LX6 | 240       | 0.39  |   |   |   |   |
+
+
+## Zephyr
+### dev environment setup on OSX
 
 Installation for Linux should be very similar. However, setting up the environment on windows can be challenging because the package installer `chocolatey` is not as great as OSX's `homebrew` or Linux's native `apt`.
 
@@ -19,12 +35,17 @@ You can follow Zephyr getting started page to setup the environment. The key ste
 - If there are no errors in build and flash, the environment is read to use
 
 
-## Build and upload
+### Build and upload
 - west build -b `boardname` tflite-micro-benchmark: add `-p always` to clean and re-build if necessary
 - west flash
 
-## Board names
+### Board names
 - Atmel SAMD21 XPLAINED PRO: atsamd21_xpro
 - Atmel ATSAMV71-XULT: sam_v71_xult
 - nRF52840 DK: nrf52840dk_nrf52840
 - STM32 Nucleo-144: nucleo_f429zi
+
+## Arduino 
+
+Boards using Arduino framework are built with platformio. Installation and build process are very straightforward 
+
