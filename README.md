@@ -1,3 +1,4 @@
+
 # Tensorflow Lite Micro Benchmark 
 
 Some boards works with platformio and unfortunately Zephyr support in platformio is not working with tflite. So the codes are separated in two groups. The pure Zephyr based boards are located in this root folder. Boards using Arduino framework are located in `platformio-board` folder. 
@@ -13,6 +14,7 @@ Some boards works with platformio and unfortunately Zephyr support in platformio
 | Atmel ATSAMV71-XULT (sam_v71_xult)        | Zephyr    | 28                     | Cortex-M7   | 300       | 1.21  |   |   |   |   |
 | Raspberry Pi Pico                         | Arduino   | 167                    | Cortex-M0+  | 133       | 0.13  |   |   |   |   |
 | ESP32-S                                   | Arduino   | 86                     | Xtensa® LX6 | 240       | 0.39  |   |   |   |   |
+
 
 
 ## Zephyr
@@ -48,4 +50,3 @@ You can follow Zephyr getting started page to setup the environment. The key ste
 ## Arduino 
 
 Boards using Arduino framework are built with platformio. Installation and build process are very straightforward 
-
