@@ -6,14 +6,14 @@ Some boards works with platformio and unfortunately Zephyr support in platformio
 
 ## Results
 
-| Board                                     | Framework | ms per 1000 inferences | CPU         | Frequency | Power |   |   |   |   |
-|-------------------------------------------|-----------|------------------------|-------------|-----------|-------|---|---|---|---|
-| Atmel SAMD21 XPLAINED PRO (atsamd21_xpro) | Zephyr    | 535                    | Cortex-M0+  | 48        | 0.69  |   |   |   |   |
-| nRF52840 DK (nrf52840dk_nrf52840)         | Zephyr    | 208                    | Cortex-M4F  | 64        | 0.13  |   |   |   |   |
-| STM32 Nucleo-144 (nucleo_f429zi)          | Arduino   | 88                     | Cortex-M4   | 180       | 0.79  |   |   |   |   |
-| Atmel ATSAMV71-XULT (sam_v71_xult)        | Zephyr    | 28                     | Cortex-M7   | 300       | 1.21  |   |   |   |   |
-| Raspberry Pi Pico                         | Arduino   | 167                    | Cortex-M0+  | 133       | 0.13  |   |   |   |   |
-| ESP32-S                                   | Arduino   | 86                     | Xtensa® LX6 | 240       | 0.39  |   |   |   |   |
+| Board                                     | Framework | ms per 1000 inferences | CPU         | Frequency | Power |
+|-------------------------------------------|-----------|------------------------|-------------|-----------|-------|
+| Atmel SAMD21 XPLAINED PRO (atsamd21_xpro) | Zephyr    | 535                    | Cortex-M0+  | 48        | 0.69  |
+| nRF52840 DK (nrf52840dk_nrf52840)         | Zephyr    | 208                    | Cortex-M4F  | 64        | 0.13  |
+| STM32 Nucleo-144 (nucleo_f429zi)          | Arduino   | 88                     | Cortex-M4   | 180       | 0.79  |
+| Atmel ATSAMV71-XULT (sam_v71_xult)        | Zephyr    | 28                     | Cortex-M7   | 300       | 1.21  |
+| Raspberry Pi Pico                         | Arduino   | 167                    | Cortex-M0+  | 133       | 0.13  |
+| ESP32-S                                   | Arduino   | 86                     | Xtensa® LX6 | 240       | 0.39  |
 
 
 
