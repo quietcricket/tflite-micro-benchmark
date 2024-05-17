@@ -14,6 +14,8 @@ Some boards works with platformio and unfortunately Zephyr support in platformio
 | Atmel ATSAMV71-XULT (sam_v71_xult)        | Zephyr    | 28                     | Cortex-M7   | 300       | 1.21  |
 | Raspberry Pi Pico                         | Arduino   | 167                    | Cortex-M0+  | 133       | 0.13  |
 | ESP32-S                                   | Arduino   | 86                     | Xtensa® LX6 | 240       | 0.39  |
+| Teensy 4.1                                | Arduino   | 9                      | Cortex-M7   | 600       | 0.52  |
+| Arduino Portenta H7                       | Arduino   | 23                     | Cortex-M7   | 480       | 1.03  |
 
 
 
@@ -46,7 +48,11 @@ You can follow Zephyr getting started page to setup the environment. The key ste
 - Atmel ATSAMV71-XULT: sam_v71_xult
 - nRF52840 DK: nrf52840dk_nrf52840
 - STM32 Nucleo-144: nucleo_f429zi
+- Novoton IOT M487: nuvoton_pfm_m487 (unable to flash)
+
 
 ## Arduino 
 
-Boards using Arduino framework are built with platformio. Installation and build process are very straightforward 
+Boards using Arduino framework are built with platformio. Installation and build process are very straightforward. Even though platformio supports Zephyr, however it is very hard to fix all the compilation errors in tflite. 
+
+Some boards have problem with Arduino.h abs macro, e.g. Arduino Portenta H7. Comment out the abs macro and change WMath.h srandom random to srand and rand fixes the problem.

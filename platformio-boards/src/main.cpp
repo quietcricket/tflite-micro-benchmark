@@ -1,6 +1,7 @@
 
 #ifdef ARDUINO
 #include <Arduino.h>
+#undef abs
 #endif
 
 #ifdef __ZEPHYR__
